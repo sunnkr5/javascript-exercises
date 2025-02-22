@@ -1,7 +1,7 @@
 const convertToCelsius = function(tempInFahrenheit) {
       let tempInCelsius = (tempInFahrenheit - 32) * 5 / 9;
     return Math.round(tempInCelsius);
-}
+};
 console.log(convertToCelsius(32));
 
 const convertToFahrenheit = function(tempInCelsius) {
