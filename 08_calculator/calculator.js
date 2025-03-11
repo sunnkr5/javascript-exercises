@@ -12,15 +12,29 @@ const subtract = function(a, b) {
 
 console.log(subtract(5, 7));
 
-const sum = function(a, b) {
-	return a + b;
+const sum = function(arr) {
+  // Check if arr is an empty array
+  if (arr.length === 0) {
+    return 0;
+  };
 
+  // Use reduce to sum the array elements
+  return arr.reduce((total, num) => total + num, 0);
 };
 
-console.log(sum(5, 7));
+console.log(sum([5, 7]));  // Output: 12
 
-const multiply = function(a, b) {
-return a * b;
+
+
+const multiply = function(numb) {
+  if (numb.length === 0) {
+    return 0;
+  };
+  let result = 1;
+  for (let index = 1; index <= numb; index++) {
+    result *= index;
+     }
+     return result;
 };
 
 console.log(multiply(5, 2));
