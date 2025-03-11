@@ -26,18 +26,19 @@ console.log(sum([5, 7]));  // Output: 12
 
 
 
-const multiply = function(numb) {
-  if (numb.length === 0) {
+const multiply = function(arr) {
+    if (arr.length === 0) {
     return 0;
-  };
-  let result = 1;
-  for (let index = 1; index <= numb; index++) {
-    result *= index;
-     }
-     return result;
+} else if (arr.length === 1) {
+    return 0;
 };
-
-console.log(multiply(5, 2));
+    let result = 1;
+    for (let index = 0; index < arr.length; index++) {
+    result *= arr[index];
+    };
+    return result;
+};
+    console.log(multiply([5, 10]));
 
 const power = function(a, b) {
 	return Math.pow(a, b);
