@@ -17,7 +17,7 @@ for (let index = 3; index <= num; index++) {
     return b;
 };
 
-console.log(fibonacci(4));
+console.log(fibonacci(10));
 
 // Do not edit below this line
 module.exports = fibonacci;
